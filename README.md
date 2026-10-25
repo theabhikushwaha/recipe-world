@@ -18,7 +18,7 @@ like other people's recipes, and leave comments.
 ## Getting started
 
 1. Clone the repo
-   git clone https://github.com/theabhikushwaha/recipe-share-django.git
+   git clone git@github.com:theabhikushwaha/recipe-world.git
    cd recipe-share-django
 
 2. Create a virtual environment and install dependencies
