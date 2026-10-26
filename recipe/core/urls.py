@@ -16,7 +16,13 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from django.http import HttpResponse
+
+# def deliberate_error(request):
+#     raise ValueError("DEBUG experiment: deliberate failure")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    # path("debug-test/", deliberate_error),
 ]
+
