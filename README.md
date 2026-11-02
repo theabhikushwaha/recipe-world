@@ -19,7 +19,7 @@ like other people's recipes, and leave comments.
 
 1. Clone the repo
    git clone git@github.com:theabhikushwaha/recipe-world.git
-   cd recipe-share-django
+   cd recipe
 
 2. Create a virtual environment and install dependencies
    python -m venv venv
