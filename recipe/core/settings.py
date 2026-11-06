@@ -15,6 +15,8 @@ import os
 import os
 from dotenv import load_dotenv
 
+# from recipe import recipe
+# from recipe import accounts
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -29,7 +31,8 @@ load_dotenv()
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.getenv("DJANGO_DEBUG", "False").lower() == "true"
+DEBUG = True
+# DEBUG = os.getenv("DJANGO_DEBUG", "False").lower() == "true"
 
 
 ALLOWED_HOSTS = ["127.0.0.1", "localhost"]
@@ -46,6 +49,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'recipe',
+    'accounts',
 ]
 
 MIDDLEWARE = [
